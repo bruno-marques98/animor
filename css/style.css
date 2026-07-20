@@ -125,6 +125,74 @@ body {
     transform: translateY(-3px);
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
+.about-image img,
+.gallery img,
+.news img{
+    object-fit:cover;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    font-size:16px;
+}
+
+.btn-primary,
+.btn-secondary,
+.service-btn,
+.contact-form button{
+    min-height:52px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.navbar{
+    transition:.4s;
+}
+
+.navbar.scrolled{
+    padding:12px 8%;
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.95);
+}
+
+.hamburger{
+    display:none;
+    font-size:34px;
+    cursor:pointer;
+    color:#00A7B7;
+}
+
+@media(max-width:900px){
+    .hamburger{
+        display:block;
+    }
+    .navbar ul{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:white;
+        flex-direction:column;
+        display:none;
+        padding:30px;
+        box-shadow:0 15px 30px rgba(0,0,0,.1);
+    }
+    .navbar ul.active{
+        display:flex;
+    }
+    .btn-navbar{
+        display:none;
+    }
+}
+
 /*=========================
 ABOUT
 =========================*/
