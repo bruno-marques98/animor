@@ -15,20 +15,29 @@
 
 <body>
     <header>
-        <nav class="navbar">
+       <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="Animor">
+                <a href="#"><img src="images/logo.png" alt="Animor"></a>
             </div>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Testemunhos</a></li>
-                <li><a href="#">Contactos</a></li>
+            <!-- Botão Menu Mobile -->
+            <button class="hamburger" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Menu -->
+            <ul class="nav-menu">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#testimonials">Testemunhos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
             </ul>
-            <a class="btn-navbar" href="#">Pedir Orçamento</a>
+            <a class="btn-navbar" href="#contactos">
+                Pedir Orçamento
+            </a>
         </nav>
     </header>
     <section class="hero">
