@@ -927,3 +927,122 @@ TOP BUTTON
         text-align: center;
     }
 }
+
+/* ==========================
+TABLETS
+========================== */
+@media (max-width:992px){
+    .container{
+        width:92%;
+    }
+    .hero{
+        padding:120px 20px 60px;
+        height:auto;
+        min-height:100vh;
+    }
+    .hero h1{
+        font-size:48px;
+    }    
+    .hero p{
+        font-size:20px;
+    }    
+    .about-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    } 
+    .about-icons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+    .footer-top{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+    .featured-news{
+        grid-column:span 1;
+    }
+}
+
+/* ==========================
+SMARTPHONES
+========================== */
+
+@media (max-width:768px){
+    section{
+        padding:70px 20px;
+    }
+    .section-title h2{
+        font-size:34px;
+    }
+    .section-title p{
+        font-size:17px;
+    }
+    .hero-logo{
+        width:170px;
+    }
+    .hero h1{
+        font-size:38px;
+        line-height:1.2;
+    }
+    .hero p{
+        font-size:18px;
+    }
+    .buttons{
+        flex-direction:column;
+        width:100%;
+    }
+    .buttons a{
+        width:100%;
+        text-align:center;
+    }
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+    .about-icons{
+        flex-direction:column;
+    }
+    .stats{
+        grid-template-columns:1fr;
+    }
+    .testimonial-summary{
+        grid-template-columns:1fr;
+    }
+    .news-content{
+        flex-direction:column;
+    }
+    .news-date{
+        width:100%;
+    }
+    .footer-top{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .footer-bottom{
+        flex-direction:column;
+    }
+    .row{
+        grid-template-columns:1fr;
+    }
+    .gallerySwiper img{
+        height:250px;
+    }
+    .whatsapp{
+        width:60px;
+        height:60px;
+        bottom:20px;
+        right:20px;
+    }
+    #topButton{
+        width:50px;
+        height:50px;
+        right:25px;
+    }
+}
