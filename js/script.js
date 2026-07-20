@@ -70,3 +70,26 @@ topButton.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+/*=========================
+HAMBURGUER
+=========================*/
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    });
+});
+
+window.addEventListener("scroll",()=>{
+    document.querySelector(".navbar")
+        .classList.toggle("scrolled",window.scrollY>40);
+});
